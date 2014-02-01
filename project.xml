@@ -1,0 +1,2163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" maximum-extent="-20037508.34,-20037508.34,20037508.34,20037508.34">
+
+<Parameters>
+  <Parameter name="attribution"><![CDATA[Map data © OpenStreetMap contributors]]></Parameter>
+  <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+  <Parameter name="center">-112.08389282226561,35.96744788208542,10</Parameter>
+  <Parameter name="format">png8:m=h</Parameter>
+  <Parameter name="interactivity_layer">geopolys</Parameter>
+  <Parameter name="interactivity_fields">color,unit,unitname,description</Parameter>
+  <Parameter name="maxzoom">14</Parameter>
+  <Parameter name="minzoom">10</Parameter>
+  <Parameter name="name"><![CDATA[Grand Canyon Vector Style]]></Parameter>
+  <Parameter name="scale">1</Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///rclark.ymayk3xr]]></Parameter>
+  <Parameter name="template"><![CDATA[<div style="text-align: center;">
+  <div style="
+    border: 1px solid #000; 
+    text-align: center; 
+    height:60px; 
+    width:60px; 
+    background-color: {{{color}}};
+	margin-left: auto;
+	margin-right: auto;">
+    <p style="line-height: 60px;">
+      <strong>{{{unit}}}</strong>
+    </p>
+  </div>
+  <div>
+    <strong>{{{unitname}}}</strong>
+  </div>
+  <hr />
+  <p style="text-align: justify;">{{{description}}}</p>
+</div>
+
+]]></Parameter>
+</Parameters>
+
+
+<Style name="geopolys" filter-mode="first">
+  <Rule>
+    <Filter>([unit] = 'water')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebffff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'river')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebffff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'lPMs')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#99ebde" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Zs')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc8a66" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Zkw')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#c7d79e" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Zkcb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b09454" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Zka')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#d7d79e" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Zgt')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#d6b09e" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Zgj')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#999999" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Zgd')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#d0b2e7" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Zgcc')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#d6c29e" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Ys')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffb366" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Yi')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff4dff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Yh')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b34d66" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Yg')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff9900" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Yds')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#656565" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Ydo')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#7f7f7f" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Yde')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b2b2b2" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Ydc')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#d6d6d6" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Yd')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebcc4d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Yc')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffbfff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Yb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b3b300" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'YZn')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#dfb2b2" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Xv')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebb3ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Xum')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#009900" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Xu')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#deebb3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Xs')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff66b3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Xr')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#99b34d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Xo')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#990000" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Xm')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb0080" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Xgr')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff6600" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Xgd')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffcc00" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Xg')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff9900" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Xec')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff0000" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Xdg')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff4d66" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Xc')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b366ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Xbr')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#669900" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Typ')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cccccc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tyi')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc9966" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tyb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#de80cc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Twi')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff4dff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Twb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffb3ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tvi')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc80ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tv')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb6600" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tsp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb80eb" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tsi')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc9966" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tsgi')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b34d80" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tsgb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b38080" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tsb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cccc99" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Ts2')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#deb380" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Ts1')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebeb99" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Ts')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebeb99" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Trm')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#deff66" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tri')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#de4d00" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Trb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc99b3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tr')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b380cc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tpp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc99cc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tpki')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b34dde" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tpkb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc66eb" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tpi')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#996699" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tpb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebb3eb" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tp6i')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff4d4d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cccccc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tocb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#de4deb" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tmlb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#9980cc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tmi')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b380cc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tmb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b399de" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Ti')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff00ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Ths')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b3eb80" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Thma')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cccceb" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tgx')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ccff4d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tgs')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#999999" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tgr')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#99ff00" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tgp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc66cc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tgl')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebde00" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tgi')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb4dff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tgg')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#99ccff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tgc')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#99eb4d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tgb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff99ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tg')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebff00" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tep')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#de80ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tei')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#9900ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Teb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc4dff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tc')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc99b3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tbpb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb664d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tbmi')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff4dde" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tbmb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffb3de" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tbi')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc9966" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tbb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cccceb" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tba')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffdeeb" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#de80cc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tay')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cceb99" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Tao')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#deeb99" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'TRmw')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b3ffb3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'TRmss')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#80ff66" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'TRms')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#4dffb3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'TRmhm')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#80de80" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'TRm')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#deff66" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'TRcs')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#99cccc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'TRcp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#99ffcc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'TRco')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#99eb4d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'TRc')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#99ffcc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'T2i')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc0066" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'T227i')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff004d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qyp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#deb3b3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qyb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebebeb" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qyap')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#de4dde" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qyab')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff80ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qwb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b399eb" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qv')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffff80" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qtr')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffff00" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qtp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff0000" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qti')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff0080" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qtg')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff0000" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qtb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffde80" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qt')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffff00" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qss')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#deb3b3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qsp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff6699" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qslr')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#996699" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qsfp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffdeeb" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qsd')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebff00" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qsc')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebebeb" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qsb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff99cc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qs')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffffb3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qr')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffcc99" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qpvp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb9966" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qpvb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb664d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qps')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#deff99" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qp6646')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ccb3ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qp6588')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#de80b3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qp6457')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb66ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qp6375')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb6699" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qp1')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff6699" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc80b3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qmrp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#deb366" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qmrb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#de804d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qmp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb80b3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qmlp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc6699" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qmcb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc99cc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qmbi')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc80de" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qmb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffccff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qltb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebccff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qlsp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff0000" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qlsb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff80ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qlp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff80b3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qlb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffccde" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Ql')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#decc99" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qkrp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc80ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qkrb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b366ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qi1')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff0066" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qi')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff00ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qhp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff0000" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qhb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffccb3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qgy')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffde66" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qgrp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#deb3b3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qgrb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebebe8" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qgo')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebcc80" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qg3')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffb34d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qg2')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebcc80" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qg1')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffde66" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qf')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebeb4d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qes')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffebcc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qec')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb9966" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qdp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebccb3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qdm')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffb366" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qdlu')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#deccb3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qdl')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff9999" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qdb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebff00" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qd')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffff80" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qcbp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb80b3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qcbi')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc80de" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qcbb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffccff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qbt')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebccff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qbmp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#deb366" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qbmb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#de804d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qbf')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ccb3ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qb6646')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b399eb" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qb6588')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc6699" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qb6457')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#de4deb" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qb6375')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#de4d66" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qb1')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff99cc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc80ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qay')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffebb3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qao')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffcc80" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qaf')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc6600" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qae')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebcc4d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qa3')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffcc80" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qa2')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#dedeb3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qa1')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffebb3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Qa')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffff80" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'QTp')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb6699" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'QTi')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb66ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'QTg7')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#d1b34d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'QTg6')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#d6c299" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'QTg5')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb9900" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'QTg4')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffb366" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'QTg')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb9900" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'QTes')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebb34d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'QTd')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebff99" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'QTb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebb3ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'QTap')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebcc66" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'QTai')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ccb3ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'QTae')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#de9980" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'QTab')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#eb994d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'QTa')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ff804d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Ptw')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#4db3ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Ptb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cc80ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Pt')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#99ebff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Pkh')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ccffff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Pkf')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ccebff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Pk')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ccffff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Ph')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#4dffde" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Pep')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#4debff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Pe')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#4dccff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Pc')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#deff00" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Ms')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#dedeff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Mr')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b3b3ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'MPu')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#66ffff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'MIPs')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#66ffff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Km')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b3eb80" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Kd')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ccff4d" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Jn')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ccff80" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Jm')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#99decc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Jks')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#80ffde" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Jkn')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#b3ff99" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Jk')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#99de99" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Je')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#cccc00" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Jc')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ccffde" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'IPMs')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#66ffff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'H20')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebffff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Dtb')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#664dff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Ct')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffb3cc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Cm')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ebebcc" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([unit] = 'Cba')</Filter>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill="#ffebeb" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke="#559944" stroke-width="0" />
+    <PolygonSymbolizer fill-opacity="1" />
+  </Rule>
+</Style>
+<Layer name="geopolys"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>geopolys</StyleName>  </Layer>
+
+<Style name="hillshade-4" filter-mode="first" image-filters="agg-stack-blur(6,6)">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([class] = 'full_highlight')</Filter>
+    <PolygonSymbolizer fill="#eeeeee" fill-opacity="0.3" comp-op="lighten" clip="false" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([class] = 'medium_highlight')</Filter>
+    <PolygonSymbolizer fill="#cccccc" fill-opacity="0.3" comp-op="lighten" clip="false" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([class] = 'medium_shadow')</Filter>
+    <PolygonSymbolizer fill="#444444" fill-opacity="0.09" comp-op="multiply" clip="false" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([class] = 'full_shadow')</Filter>
+    <PolygonSymbolizer fill="#333333" fill-opacity="0.09" comp-op="multiply" clip="false" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <PolygonSymbolizer clip="false" />
+  </Rule>
+</Style>
+<Style name="hillshade-3" filter-mode="first" image-filters="agg-stack-blur(3,3)">
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'full_highlight')</Filter>
+    <PolygonSymbolizer fill="#eeeeee" fill-opacity="0.3" comp-op="lighten" clip="false" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'medium_highlight')</Filter>
+    <PolygonSymbolizer fill="#cccccc" fill-opacity="0.3" comp-op="lighten" clip="false" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'medium_shadow')</Filter>
+    <PolygonSymbolizer fill="#444444" fill-opacity="0.09" comp-op="multiply" clip="false" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'full_shadow')</Filter>
+    <PolygonSymbolizer fill="#333333" fill-opacity="0.09" comp-op="multiply" clip="false" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <PolygonSymbolizer clip="false" />
+  </Rule>
+</Style>
+<Style name="hillshade-2" filter-mode="first" image-filters="agg-stack-blur(1,1)">
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([class] = 'full_highlight')</Filter>
+    <PolygonSymbolizer fill="#eeeeee" fill-opacity="0.3" comp-op="lighten" clip="false" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([class] = 'medium_highlight')</Filter>
+    <PolygonSymbolizer fill="#cccccc" fill-opacity="0.3" comp-op="lighten" clip="false" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([class] = 'medium_shadow')</Filter>
+    <PolygonSymbolizer fill="#444444" fill-opacity="0.09" comp-op="multiply" clip="false" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([class] = 'full_shadow')</Filter>
+    <PolygonSymbolizer fill="#333333" fill-opacity="0.09" comp-op="multiply" clip="false" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <PolygonSymbolizer clip="false" />
+  </Rule>
+</Style>
+<Style name="hillshade-1" filter-mode="first" image-filters="agg-stack-blur(1,1)">
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'full_highlight')</Filter>
+    <PolygonSymbolizer fill="#eeeeee" fill-opacity="0.3" comp-op="lighten" clip="false" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'medium_highlight')</Filter>
+    <PolygonSymbolizer fill="#cccccc" fill-opacity="0.3" comp-op="lighten" clip="false" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'medium_shadow')</Filter>
+    <PolygonSymbolizer fill="#444444" fill-opacity="0.09" comp-op="multiply" clip="false" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'full_shadow')</Filter>
+    <PolygonSymbolizer fill="#333333" fill-opacity="0.09" comp-op="multiply" clip="false" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <PolygonSymbolizer clip="false" />
+  </Rule>
+</Style>
+<Layer name="hillshade"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>hillshade-1</StyleName>
+    <StyleName>hillshade-2</StyleName>
+    <StyleName>hillshade-3</StyleName>
+    <StyleName>hillshade-4</StyleName>  </Layer>
+
+<Style name="contours" filter-mode="first" comp-op="multiply">
+  <Rule>
+    <Filter>([index] = 1)</Filter>
+    <LineSymbolizer stroke-opacity="1" stroke-width="0.4" stroke="#777777" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke="#777777" stroke-opacity="0.5" stroke-width="0.25" />
+  </Rule>
+</Style>
+<Layer name="contours"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>contours</StyleName>  </Layer>
+
+<Style name="geolines-decoration" filter-mode="first">
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.12.1')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.12.1')</Filter>
+    <MarkersSymbolizer placement="line" spacing="5.7" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.33')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.10.33')</Filter>
+    <MarkersSymbolizer placement="line" spacing="34" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.35')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.10.35')</Filter>
+    <MarkersSymbolizer placement="line" spacing="34" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.39')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.10.39')</Filter>
+    <MarkersSymbolizer placement="line" spacing="34" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.3')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.10.3')</Filter>
+    <MarkersSymbolizer placement="line" spacing="34" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.7')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.10.7')</Filter>
+    <MarkersSymbolizer placement="line" spacing="34" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.1')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.10.1')</Filter>
+    <MarkersSymbolizer placement="line" spacing="34" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.8.3')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.8.3')</Filter>
+    <MarkersSymbolizer placement="line" spacing="34" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.8.1')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.8.1')</Filter>
+    <MarkersSymbolizer placement="line" spacing="34" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.8.7')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.8.7')</Filter>
+    <MarkersSymbolizer placement="line" spacing="34" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.11')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/[fgdc].svg" transform="translate(0 -1.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.2.11')</Filter>
+    <MarkersSymbolizer placement="line" spacing="68" file="svg/[fgdc].svg" transform="translate(0 -1.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.15')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/[fgdc].svg" transform="translate(0 -1.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.2.15')</Filter>
+    <MarkersSymbolizer placement="line" spacing="68" file="svg/[fgdc].svg" transform="translate(0 -1.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.9')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/[fgdc].svg" transform="translate(0 -1.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.2.9')</Filter>
+    <MarkersSymbolizer placement="line" spacing="68" file="svg/[fgdc].svg" transform="translate(0 -1.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.7')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.2.7')</Filter>
+    <MarkersSymbolizer placement="line" spacing="68" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.3')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.2.3')</Filter>
+    <MarkersSymbolizer placement="line" spacing="68" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.1')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.2.1')</Filter>
+    <MarkersSymbolizer placement="line" spacing="68" file="svg/[fgdc].svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '1.1.2')</Filter>
+    <MarkersSymbolizer spacing="9999" placement="line" file="svg/question-mark.svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '1.1.2')</Filter>
+    <MarkersSymbolizer placement="line" spacing="68" file="svg/question-mark.svg" transform="translate(0 -2.5)" allow-overlap="true" />
+  </Rule>
+</Style>
+<Style name="geolines" filter-mode="first">
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.12.1')</Filter>
+    <LineSymbolizer stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.12.1')</Filter>
+    <LineSymbolizer stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.12.1')</Filter>
+    <LineSymbolizer stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.12.1')</Filter>
+    <LineSymbolizer stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.12.1')</Filter>
+    <LineSymbolizer stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.39')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.39')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.39')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.39')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.10.39')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.35')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.35')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.35')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.35')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.10.35')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.33')</Filter>
+    <LineSymbolizer stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.33')</Filter>
+    <LineSymbolizer stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.33')</Filter>
+    <LineSymbolizer stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.33')</Filter>
+    <LineSymbolizer stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.10.33')</Filter>
+    <LineSymbolizer stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.10.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.10.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.1')</Filter>
+    <LineSymbolizer stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.1')</Filter>
+    <LineSymbolizer stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.1')</Filter>
+    <LineSymbolizer stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.10.1')</Filter>
+    <LineSymbolizer stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.10.1')</Filter>
+    <LineSymbolizer stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.8.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.8.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.8.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.8.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.8.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.8.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.8.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.8.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.8.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.8.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.8.1')</Filter>
+    <LineSymbolizer stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.8.1')</Filter>
+    <LineSymbolizer stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.8.1')</Filter>
+    <LineSymbolizer stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.8.1')</Filter>
+    <LineSymbolizer stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.8.1')</Filter>
+    <LineSymbolizer stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.15')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.15')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.15')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.15')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.2.15')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.11')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.11')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.11')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.11')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.2.11')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.9')</Filter>
+    <LineSymbolizer stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.9')</Filter>
+    <LineSymbolizer stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.9')</Filter>
+    <LineSymbolizer stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.9')</Filter>
+    <LineSymbolizer stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.2.9')</Filter>
+    <LineSymbolizer stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.2.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.2.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.1')</Filter>
+    <LineSymbolizer stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.1')</Filter>
+    <LineSymbolizer stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.1')</Filter>
+    <LineSymbolizer stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.2.1')</Filter>
+    <LineSymbolizer stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.2.1')</Filter>
+    <LineSymbolizer stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.1.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.1.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.1.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.1.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.1.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.1.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.1.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.1.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.1.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.1.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.1.1')</Filter>
+    <LineSymbolizer stroke-opacity="0" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.1.1')</Filter>
+    <LineSymbolizer stroke-opacity="0.25" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.1.1')</Filter>
+    <LineSymbolizer stroke-opacity="0.5" stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '2.1.1')</Filter>
+    <LineSymbolizer stroke-width="1.35" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '2.1.1')</Filter>
+    <LineSymbolizer stroke-width="1.35" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '1.1.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '1.1.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0.25" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '1.1.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '1.1.7')</Filter>
+    <LineSymbolizer stroke-dasharray="1.4, 2.1" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '1.1.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '1.1.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0.25" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '1.1.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '1.1.3')</Filter>
+    <LineSymbolizer stroke-dasharray="9.9, 2.2" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([fgdc] = '1.1.2')</Filter>
+    <LineSymbolizer stroke-opacity="0" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([fgdc] = '1.1.2')</Filter>
+    <LineSymbolizer stroke-opacity="0.25" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([fgdc] = '1.1.2')</Filter>
+    <LineSymbolizer stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([fgdc] = '1.1.2')</Filter>
+    <LineSymbolizer stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <Filter>([fgdc] = 'hide')</Filter>
+    <LineSymbolizer stroke-opacity="0" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <Filter>([fgdc] = 'unknown')</Filter>
+    <LineSymbolizer stroke-opacity="0" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <LineSymbolizer stroke-opacity="0" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <LineSymbolizer stroke-opacity="0.25" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <LineSymbolizer stroke-opacity="0.5" stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <LineSymbolizer stroke="#000000" stroke-linejoin="round" stroke-linecap="butt" stroke-width="0.75" />
+  </Rule>
+</Style>
+<Layer name="geolines"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>geolines</StyleName>
+    <StyleName>geolines-decoration</StyleName>  </Layer>
+
+</Map>

@@ -1,0 +1,47 @@
+_prefs: 
+  saveCenter: true
+_properties: {}
+attribution: Map data © OpenStreetMap contributors
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -112.08389282226561
+  - 35.96744788208542
+  - 10
+description: ''
+format: "png8:m=h"
+interactivity_layer: geopolys
+maxzoom: 14
+minzoom: 10
+mtime: 1391138440298
+name: Grand Canyon Vector Style
+scale: 1
+source: "mapbox:///rclark.ymayk3xr"
+styles: 
+  - style.mss
+  - lines.mss
+  - terrain.mss
+template: |+
+  <div style="text-align: center;">
+    <div style="
+      border: 1px solid #000; 
+      text-align: center; 
+      height:60px; 
+      width:60px; 
+      background-color: {{{color}}};
+  	margin-left: auto;
+  	margin-right: auto;">
+      <p style="line-height: 60px;">
+        <strong>{{{unit}}}</strong>
+      </p>
+    </div>
+    <div>
+      <strong>{{{unitname}}}</strong>
+    </div>
+    <hr />
+    <p style="text-align: justify;">{{{description}}}</p>
+  </div>
+  
